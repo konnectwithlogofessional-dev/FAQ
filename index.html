@@ -1,1 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ | Logofessional</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#f8fafc;
+  text-align:center;
+  background:#0f172a;
+  background-image:
+    radial-gradient(circle at 0 0, rgba(56,189,248,0.08) 2px, transparent 2px),
+    radial-gradient(circle at 20px 20px, rgba(56,189,248,0.05) 2px, transparent 2px);
+  background-size:40px 40px;
+}
+
+.container {
+  max-width:900px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+h1 {
+  font-size:36px;
+  font-weight:900;
+  margin-bottom:15px;
+}
+
+.subtitle {
+  color:#94a3b8;
+  margin-bottom:30px;
+}
+
+/* Divider */
+.faq-divider {
+  width:100px;
+  height:3px;
+  margin:40px auto 60px auto;
+  background:#38bdf8;
+  border-radius:3px;
+  opacity:0;
+  animation: fadeInDivider 1.2s ease forwards;
+  animation-delay:0.4s;
+  box-shadow:
+    0 0 8px rgba(56,189,248,0.6),
+    0 0 18px rgba(56,189,248,0.4);
+}
+
+@keyframes fadeInDivider {
+  from {
+    opacity:0;
+    transform:translateY(15px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* FAQ Accordion */
+.faq {
+  text-align:left;
+}
+
+.faq-item {
+  border-bottom:1px solid rgba(148,163,184,0.2);
+  padding:25px 0;
+}
+
+.faq-question {
+  cursor:pointer;
+  font-size:20px;
+  font-weight:700;
+  color:#38bdf8;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.faq-question span {
+  font-size:22px;
+  transition:0.3s;
+}
+
+.faq-answer {
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.4s ease;
+}
+
+.faq-answer p {
+  margin-top:15px;
+  font-size:15px;
+  line-height:1.6;
+  color:#e2e8f0;
+}
+
+.faq-item.active .faq-answer {
+  max-height:500px;
+}
+
+.faq-item.active .faq-question span {
+  transform:rotate(45deg);
+}
+
+/* CTA */
+.cta {
+  margin-top:80px;
+}
+
+.cta a {
+  display:inline-block;
+  margin:10px;
+  padding:14px 28px;
+  background:#0284c7;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.cta a:hover {
+  background:#0369a1;
+}
+
+.footer {
+  margin-top:80px;
+  color:#64748b;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Frequently Asked Questions</h1>
+<p class="subtitle">
+Clear answers for serious reptile breeders.
+</p>
+
+<div class="faq-divider"></div>
+
+<div class="faq">
+
+  <div class="faq-item">
+    <div class="faq-question">
+      Why does anatomical accuracy matter in reptile logos?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        In the reptile industry, experienced breeders notice details immediately. Incorrect anatomy signals inexperience, while accurate design builds trust and credibility. Every logo is created with breeder-level anatomical accuracy.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      What is your logo design pricing?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        Pricing reflects originality, research, and custom craftsmanship — not templates or shortcuts. Rates remain fair and flexible, with part-payment options available. For an exact quote, share your niche, idea, and expectations.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      Are your logos AI-generated?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        No. Every logo is designed manually from scratch. No AI, no stock graphics, and no templates. This ensures originality, exclusivity, and long-term brand value.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      Do you offer revisions?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        Yes. Reasonable revisions are included. Collaboration and feedback are part of the process to ensure the final logo aligns perfectly with your vision.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      What files will I receive?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        You’ll receive all professional formats suitable for social media, websites, print, merchandise, and branding — ready for real-world use.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      Who is this service best for?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        Ideal for reptile breeders, small reptile businesses, personal brands, and creators who want non-generic, credibility-driven branding.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="cta">
+  <a href="mailto:Logofessional.123@gmail.com">Start Your Project</a>
+  <a href="https://konnectwithlogofessional-dev.github.io/portfolio/">Back to Portfolio</a>
+</div>
+
+<div class="footer">
+© 2026 Logofessional — Reptile Logo Specialist
+</div>
+
+</div>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', () => {
+    item.parentElement.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ | Logofessional</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#f8fafc;
+  text-align:center;
+  background:#0f172a;
+  background-image:
+    radial-gradient(circle at 0 0, rgba(56,189,248,0.08) 2px, transparent 2px),
+    radial-gradient(circle at 20px 20px, rgba(56,189,248,0.05) 2px, transparent 2px);
+  background-size:40px 40px;
+}
+
+.container {
+  max-width:900px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+h1 {
+  font-size:36px;
+  font-weight:900;
+  margin-bottom:15px;
+}
+
+.subtitle {
+  color:#94a3b8;
+  margin-bottom:30px;
+}
+
+/* Divider */
+.faq-divider {
+  width:100px;
+  height:3px;
+  margin:40px auto 60px auto;
+  background:#38bdf8;
+  border-radius:3px;
+  opacity:0;
+  animation: fadeInDivider 1.2s ease forwards;
+  animation-delay:0.4s;
+  box-shadow:
+    0 0 8px rgba(56,189,248,0.6),
+    0 0 18px rgba(56,189,248,0.4);
+}
+
+@keyframes fadeInDivider {
+  from {
+    opacity:0;
+    transform:translateY(15px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* FAQ Accordion */
+.faq {
+  text-align:left;
+}
+
+.faq-item {
+  border-bottom:1px solid rgba(148,163,184,0.2);
+  padding:25px 0;
+}
+
+.faq-question {
+  cursor:pointer;
+  font-size:20px;
+  font-weight:700;
+  color:#38bdf8;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.faq-question span {
+  font-size:22px;
+  transition:0.3s;
+}
+
+.faq-answer {
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.4s ease;
+}
+
+.faq-answer p {
+  margin-top:15px;
+  font-size:15px;
+  line-height:1.6;
+  color:#e2e8f0;
+}
+
+.faq-item.active .faq-answer {
+  max-height:500px;
+}
+
+.faq-item.active .faq-question span {
+  transform:rotate(45deg);
+}
+
+/* CTA */
+.cta {
+  margin-top:80px;
+}
+
+.cta a {
+  display:inline-block;
+  margin:10px;
+  padding:14px 28px;
+  background:#0284c7;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.cta a:hover {
+  background:#0369a1;
+}
+
+.footer {
+  margin-top:80px;
+  color:#64748b;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Frequently Asked Questions</h1>
+<p class="subtitle">
+Clear answers for serious reptile breeders.
+</p>
+
+<div class="faq-divider"></div>
+
+<div class="faq">
+
+  <div class="faq-item">
+    <div class="faq-question">
+      Why does anatomical accuracy matter in reptile logos?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        In the reptile industry, experienced breeders notice details immediately. Incorrect anatomy signals inexperience, while accurate design builds trust and credibility. Every logo is created with breeder-level anatomical accuracy.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      What is your logo design pricing?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        Pricing reflects originality, research, and custom craftsmanship — not templates or shortcuts. Rates remain fair and flexible, with part-payment options available. For an exact quote, share your niche, idea, and expectations.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      Are your logos AI-generated?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        No. Every logo is designed manually from scratch. No AI, no stock graphics, and no templates. This ensures originality, exclusivity, and long-term brand value.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      Do you offer revisions?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        Yes. Reasonable revisions are included. Collaboration and feedback are part of the process to ensure the final logo aligns perfectly with your vision.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      What files will I receive?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        You’ll receive all professional formats suitable for social media, websites, print, merchandise, and branding — ready for real-world use.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      Who is this service best for?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      <p>
+        Ideal for reptile breeders, small reptile businesses, personal brands, and creators who want non-generic, credibility-driven branding.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="cta">
+  <a href="mailto:Logofessional.123@gmail.com">Start Your Project</a>
+  <a href="https://konnectwithlogofessional-dev.github.io/portfolio/">Back to Portfolio</a>
+</div>
+
+<div class="footer">
+© 2026 Logofessional — Reptile Logo Specialist
+</div>
+
+</div>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', () => {
+    item.parentElement.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>
 
